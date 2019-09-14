@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "brs/brs-server",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Serveur de l'application BRS serveur.",
     "keywords": [
         "framework",
         "laravel"
@@ -9,9 +9,19 @@
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
+        "boyhagemann/wave": "^0.1.0@dev",
+        "cdaguerre/php-trello-api": "^0.9.3",
         "fideloper/proxy": "^4.0",
+        "infusionsoft/php-sdk": "^1.4",
+        "james-heinrich/getid3": "^1.9",
+        "jeremykenedy/laravel-logger": "^3.0",
+        "jeremykenedy/laravel-roles": "^2.2",
+        "jeremykenedy/laravel-users": "^3.5",
         "laravel/framework": "5.8.*",
-        "laravel/tinker": "^1.0"
+        "laravel/passport": "^7.3",
+        "laravel/tinker": "^1.0",
+        "stevenmaguire/trello-php": "^0.5.3",
+        "wapmorgan/media-file": "^0.1.4"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

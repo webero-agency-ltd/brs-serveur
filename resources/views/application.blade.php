@@ -1,0 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+<div id="application" data-base="{{ route( 'home' , [] , false ) }}">
+    <app-admin :user="{{ Auth::user() }}"></app-admin>
+</div>
+@endsection

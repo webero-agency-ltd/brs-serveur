@@ -13,6 +13,18 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group([ 'middleware' => 'auth:api'], function() {
+
+    Route::get('/user', function (Request $request) {
+        return $request->user();
+    });
+
+    //route des applications 
+    Route::resource('/application', 'Api\ApplicationController', ['except' => ['create','edit']]);
+    //Route::resource('/permissions', 'Api\ApplicationController', ['except' => ['create', 'edit']]);
+
+    //ici on chech dans IFS s'il l'application IFS na pas encore initiélisé ces contacts 
+    Route::get('/infusionsoft/readycontact', 'Api\ApplicationController@readycontact') ; 
+    Route::get('/infusionsoft/fetchContact', 'Api\InfusionsoftController@fetchContact') ; 
+    
 });

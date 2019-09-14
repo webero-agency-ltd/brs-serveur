@@ -1,5 +1,14 @@
 <?php
 
+use App\Libs\Application;
+use App\Libs\ApplicationProvider;
+use App\Libs\Infusionsoft;
+use App\Libs\InfusionsoftProvider;
+use App\Libs\Option;
+use App\Libs\OptionProvider;
+use App\Libs\Vosfacture;
+use App\Libs\VosfactureProvider;
+
 return [
 
     /*
@@ -175,6 +184,13 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //provider sujet de role 
+        jeremykenedy\LaravelLogger\LaravelLoggerServiceProvider::class,
+        jeremykenedy\LaravelRoles\RolesServiceProvider::class,
+        ApplicationProvider::class , 
+        VosfactureProvider::class , 
+        InfusionsoftProvider::class , 
+        OptionProvider::class , 
     ],
 
     /*
@@ -226,6 +242,11 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        //facade des elements que j'ai crée 
+        'Application' => Application::class, 
+        'Vosfacture' => Vosfacture::class , 
+        'Infusionsoft' => Infusionsoft::class , 
+        'Option' => Option::class , 
     ],
 
 ];

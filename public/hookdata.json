@@ -1,0 +1,99 @@
+//nouvelle utilisateur 
+{
+  "client": {
+    "id": 23288502,
+    "name": "Heldino Herbert",
+    "tax_no": "",
+    "post_code": "",
+    "city": "",
+    "street": "",
+    "first_name": "",
+    "country": "",
+    "email": "",
+    "phone": "",
+    "www": "",
+    "fax": "",
+    "street_no": null,
+    "kind": "buyer",
+    "bank": "",
+    "bank_account": "",
+    "bank_account_id": null,
+    "shortcut": "Heldino Herbert",
+    "note": "",
+    "last_name": "",
+    "deleted": false,
+    "discount": null,
+    "payment_to_kind": "",
+    "use_delivery_address": false,
+    "delivery_address": "",
+    "company": true,
+    "mobile_phone": "",
+    "register_number": "",
+    "external_ids": {
+      "fakturownia": 23288502
+    },
+    "buyer": {},
+    "skip_webhooks": true
+  },
+  "app_name": "fakturownia",
+  "api_token": "HECGcWtEGbX8UNHrXNZ/ahheldino",
+  "locale": "fr"
+}
+
+//création de nouvelle produit 
+{
+  "product": {
+    "name": "création site web",
+    "code": "",
+    "price_net": "1500.0",
+    "tax": "20",
+    "price_gross": "1800.0",
+    "currency": "EUR",
+    "description": "",
+    "stock_level": "0.0",
+    "disabled": false,
+    "external_ids": {
+      "fakturownia": 26323052
+    },
+    "category_name": null,
+    "skip_webhooks": true
+  },
+  "app_name": "fakturownia",
+  "api_token": "HECGcWtEGbX8UNHrXNZ/ahheldino",
+  "locale": "fr"
+}
+//Nouvelle Document 
+{
+  "id": 50320737,
+  "deal": {
+    "name": "création site web",
+    "description": "",
+    "price": "1800.0",
+    "paid": false,
+    "url": "https://ahheldino.vosfactures.fr/f/2/RUlrb4p5KudjGtMV2ef",
+    "date": "13/09/2019",
+    "invoice_no": "2",
+    "kind": "vat",
+    "currency": "EUR",
+    "external_ids": {
+      "fakturownia": 50320737
+    },
+    "client": {
+      "name": "rafvy loremsip",
+      "tax_no": "",
+      "first_name": "rafvy",
+      "last_name": "loremsip",
+      "bank_account": null,
+      "bank_account_id": null,
+      "register_number": null,
+      "skip_webhooks": true,
+      "external_ids": {
+        "fakturownia": 23288634
+      }
+    },
+    "skip_webhooks": true
+  },
+  "app_name": "fakturownia",
+  "api_token": "HECGcWtEGbX8UNHrXNZ/ahheldino",
+  "locale": "fr"
+}
