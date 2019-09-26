@@ -1,13 +1,13 @@
 <?php
 
-use App\Libs\Application;
-use App\Libs\ApplicationProvider;
-use App\Libs\Infusionsoft;
-use App\Libs\InfusionsoftProvider;
-use App\Libs\Option;
-use App\Libs\OptionProvider;
-use App\Libs\Vosfacture;
-use App\Libs\VosfactureProvider;
+use App\Facades\Application;
+use App\Facades\Infusionsoft;
+use App\Facades\Option;
+use App\Facades\Vosfacture;
+use App\Providers\ApplicationProvider;
+use App\Providers\InfusionsoftProvider;
+use App\Providers\OptionProvider;
+use App\Providers\VosfactureProvider;
 
 return [
 

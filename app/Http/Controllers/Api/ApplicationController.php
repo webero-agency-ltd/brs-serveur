@@ -11,6 +11,16 @@ use App\Libs\Application;
 class ApplicationController extends Controller
 {
 
+    /**
+     * 
+     * @OA\Get(
+     *      path="/applications",
+     *      @OA\Response(
+     *          response=200 , 
+     *          description="Récupération des API de l'application" , 
+     *      )
+     * )
+     */
     public function index(Request $request)
     {
         $all = $request->only('name', 'accessToken', 'url', 'type') ; 

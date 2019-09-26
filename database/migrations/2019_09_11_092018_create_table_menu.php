@@ -16,10 +16,12 @@ class CreateTableMenu extends Migration
         Schema::create('menus', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('link');
+            $table->string('link')->nullable();
             $table->string('text');
             $table->string('desc');
             $table->string('permition');
+            $table->integer('parent')->nullable();
+            //$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }

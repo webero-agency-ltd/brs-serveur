@@ -12,21 +12,22 @@
 */
 
 //@todo : Récupération de la liste de link dans les menus
-
 use App\Menu;
+use Illuminate\Support\Facades\App;
 
-$menu = Menu::all()->map->link->filter(function ($value, $key) {
-    return $value;
-})->values()->toArray(); 
+if (!App::runningInConsole()) {
+    $menu = Menu::all()->map->link->filter(function ($value, $key) {
+        return $value;
+    })->values()->toArray(); 
 
-Route::get('/{name?}', 'PageController@home')
-    ->where('name','('.implode ('|' , $menu ).')')
-    ->name('home');
+    Route::get('/{name?}', 'PageController@home')
+        ->where('name','('.implode ('|' , $menu ).')')
+        ->name('home');
+}
 
 Auth::routes();
 
 //redirection apres auth IFS 
 Route::get('/application/ifusionsoft', 'PageController@ifusionsoft');
-
 
 //ajoute de route 404

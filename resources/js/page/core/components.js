@@ -10,36 +10,24 @@ Vue.component('b-form-item', bFormItem);
 import bForm from '../components/b/form';
 Vue.component('b-form', bForm);
 
-//Importation des différents section de l'application  
-
+///////////////////////////////////////////
+// Importation de l'applications  
+//////////////////////////////////////////
 import admin from '../application/admin';
 Vue.component('app-admin', admin);
-
-///////////////////////////////////////////
-// Composante 
-//////////////////////////////////////////
-
-import modal from '../components/modal';
-Vue.component('modal', modal);
 
 import adminMenu from '../components/admin/menu';
 Vue.component('admin-menu', adminMenu);
 
-import OperateurMenu from '../components/operateur/menu';
-Vue.component('operateur-menu', OperateurMenu);
+import adminSidebar from '../components/admin/sidebar';
+Vue.component('admin-sidebar', adminSidebar);
 
-//composante relative a l'application 
-import vosfacture from '../components/application/vosfacture';
-Vue.component('vosfacture', vosfacture);
+///////////////////////////////////////////
+// Composante 
+//////////////////////////////////////////
+import modal from '../components/modal';
+Vue.component('modal', modal);
 
-import infusionsoft from '../components/application/infusionsoft';
-Vue.component('infusionsoft', infusionsoft);
-
-//composante de contact Infusionsoft 
-import infusionsoftContact from '../components/infusionsoft/contact';
-Vue.component('infusionsoft-contact', infusionsoftContact);
-
-//////////////////////////////////////////////////////////////////////////////////////////////
 import { 
 	Menu , 
 	Avatar , 

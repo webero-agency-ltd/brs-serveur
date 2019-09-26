@@ -1,5 +1,5 @@
 <template>
-    <div :style="{ marginLeft: 'auto', marginRight: 'auto', background: '#fff', padding: '24px', minHeight: '380px' , maxWidth : '992px' }">
+    <div style="overflow-x: hidden; overflow-y: auto; padding: 32px">
         <a-row :gutter="12">
             <a-col>
                 <h1>Page home du route</h1>

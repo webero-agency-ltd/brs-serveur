@@ -21,7 +21,8 @@
         "laravel/passport": "^7.3",
         "laravel/tinker": "^1.0",
         "stevenmaguire/trello-php": "^0.5.3",
-        "wapmorgan/media-file": "^0.1.4"
+        "wapmorgan/media-file": "^0.1.4",
+        "zircote/swagger-php": "^3.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

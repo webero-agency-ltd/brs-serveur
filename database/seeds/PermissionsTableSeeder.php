@@ -47,7 +47,7 @@ class PermissionsTableSeeder extends Seeder
             //permition sur la service comptabilité 
             [
                 'name'        => 'Can Sync Users Vos Facture',
-                'slug'        => 'sync.create',
+                'slug'        => 'sync.store',
                 'description' => 'Can Sync Users Vos Facture',
                 'model'       => 'Permission',
             ],
@@ -60,7 +60,7 @@ class PermissionsTableSeeder extends Seeder
             //création est mise a jour des applications a intégrer 
             [
                 'name'        => 'Can Create CMS and ERP',
-                'slug'        => 'application.create',
+                'slug'        => 'application.store',
                 'description' => 'Can Create CMS and ERP',
                 'model'       => 'Permission',
             ],
@@ -68,6 +68,41 @@ class PermissionsTableSeeder extends Seeder
                 'name'        => 'Can Update CMS and ERP',
                 'slug'        => 'application.update',
                 'description' => 'Can update CMS and ERP',
+                'model'       => 'Permission',
+            ],
+            /**
+             * permition sur la manipulation des différents permission et de role
+             */
+            //role
+            [
+                'name'        => 'Can Create Role',
+                'slug'        => 'role.store',
+                'description' => 'Can Create Role',
+                'model'       => 'Permission',
+            ],
+            [
+                'name'        => 'Can Delete Role',
+                'slug'        => 'role.delete',
+                'description' => 'Can Delete Role',
+                'model'       => 'Permission',
+            ],
+            [
+                'name'        => 'Can View Role',
+                'slug'        => 'role.view',
+                'description' => 'Can View Role',
+                'model'       => 'Permission',
+            ],
+            [
+                'name'        => 'Can Update Role',
+                'slug'        => 'role.update',
+                'description' => 'Can Update Role',
+                'model'       => 'Permission',
+            ],
+            //permition
+            [
+                'name'        => 'Can View Permission',
+                'slug'        => 'permission.view',
+                'description' => 'Can View Permission',
                 'model'       => 'Permission',
             ],
         ];

@@ -206,5 +206,5 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'laravelUsersEnabled'           => env('ROLES_GUI_LARAVEL_ROLES_ENABLED', false),
+    'laravelUsersEnabled'           => env('ROLES_GUI_LARAVEL_ROLES_ENABLED', true),
 ];

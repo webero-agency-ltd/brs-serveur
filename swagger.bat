@@ -1,0 +1,1 @@
+./vendor/bin/openapi --format json --output ./public/docs/swagger.json ./config/swagger.php ./app/Http/Controllers/Api/

@@ -3,7 +3,7 @@
         has-feedback
         :validate-status="store.state.error[champ]?'error':''" 
         :help="store.state.error[champ]?store.state.error[champ]:''"
-        :label="$lang( this.$parent.$parent.$parent.label + ' ' + this.champ )">
+        :label=" this.$parent.$parent.$parent.label ? $lang( this.$parent.$parent.$parent.label + ' ' + this.champ ):false">
         <slot></slot>
     </a-form-item>
 </template>
